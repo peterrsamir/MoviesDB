@@ -19,5 +19,6 @@ enum NetworkConstants{
         static let page = "page"
         static let sortBy = "sort_by"
         static let popularityDesc = "popularity.desc"
+        static let imageURLPath = "https://image.tmdb.org/t/p/original"
     }
 }

@@ -18,7 +18,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene{
             let window = UIWindow(windowScene: windowScene)
             navigationController = UINavigationController(
-                rootViewController: HomeViewController()
+                rootViewController: HomeViewController(
+                    viewmodel: HomeViewModel(
+                        moviesRemoteDataSource: MoviesRemoteDatasource()
+                    )
+                )
             )
             window.rootViewController = navigationController
             self.window = window
